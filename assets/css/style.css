@@ -18,6 +18,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    color:#252525;
+ 
+}
 
 /* Header */
 header {
@@ -68,14 +75,6 @@ nav {
     font-size: 2rem;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing:2px;
-    color:#252525;
- 
-}
-
 /* Main content */
 main {
     /* Make main element take up any surplus space to push footer down */
@@ -88,6 +87,22 @@ main {
 height:600px;
 width:100%;
 background:url('../images/hero-image.webp') no-repeat center center/cover;
+position:relative;
+}
+
+#cover-text {
+    background-color: rgba(241, 109, 107, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width:80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -133,6 +148,12 @@ background:url('../images/hero-image.webp') no-repeat center center/cover;
     /*main content*/
     main {
         margin-top: 79px; /* Adjust this value based on the height of your header */
+    }
+    /*cover text*/
+    #cover-text {
+        width:300px;
+        right: 50px;
+        
     }
 
 }
